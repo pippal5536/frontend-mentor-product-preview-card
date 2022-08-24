@@ -70,7 +70,7 @@ img {
 #product-name {
     color: hsl(212, 21%, 14%);
     font-family: 'Fraunces', serif;
-    font-size: xx-large;
+    font-size: 3rem;
     font-weight: bolder;
 }
 
@@ -88,7 +88,7 @@ img {
 #discount {
     color: hsl(158, 36%, 37%);
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: 3rem;
     font-family: 'Fraunces', serif;
 
 }
@@ -131,20 +131,48 @@ button svg {
 
     .container {
         width: 50rem;
-        height: 30rem;
+        height: 40rem;
         display: flex;
         flex-direction: row;
+
     }
 
-    img {
-        width: 25rem;
+    figure {
+        background-image: url('./images/image-product-desktop.jpg');
+        width: 100%;
         height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
         border-radius: 0.4rem 0 0 0.4rem;
     }
 
-    .product-container {
-        justify-content: space-around;
-        height: 90%;
+    img {
+        display: none;
     }
 
+    .product-container {
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+        padding: 0 2rem;
+        /* margin: 1rem 0; */
+    }
+
+    #product-name {
+        font-size: 3rem;
+        font-weight: bolder;
+        width: 90%;
+    }
+
+    #discount {
+        font-size: 3rem;
+    }
+
+    #main-price {
+        padding: 1rem 0;
+    }
+
+    #product-detail {
+        width: 90%;
+    }
 }
