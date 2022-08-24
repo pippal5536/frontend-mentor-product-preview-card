@@ -16,7 +16,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,8 +27,9 @@ Users should be able to:
 - See hover and focus states for interactive elements
 
 ### Screenshot
-
-![](./screenshot.jpg)
+- for desktops(min width 1440px)
+![](./screenshot/screenshot.png)
+- for mobile(min width 375px)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
