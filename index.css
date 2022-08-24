@@ -1,0 +1,150 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+Font size (paragraph): 14px
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    width: 26rem;
+    height: 50rem;
+    margin: 1rem;
+}
+
+
+img {
+    width: 100%;
+    height: 20rem;
+    display: block;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0.4rem 0.4rem 0;
+    padding: 0 4rem;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 100%;
+}
+
+#product-type {
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.2rem;
+
+}
+
+#product-name {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#product-details {
+    line-height: 1.5em;
+    color: hsl(228, 12%, 48%);
+
+}
+
+#product-price {
+    display: flex;
+    flex-direction: row;
+}
+
+#discount {
+    color: hsl(158, 36%, 37%);
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: 'Fraunces', serif;
+
+}
+
+#main-price {
+    padding: 0.4rem 0;
+    margin-left: 2rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    transition: background-color 0.4s;
+}
+
+button:hover {
+    background-color: hsl(159, 36%, 23%);
+    cursor: pointer;
+}
+
+button svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+@media (min-width: 1440px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 50rem;
+        height: 30rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        width: 25rem;
+        height: 100%;
+        border-radius: 0.4rem 0 0 0.4rem;
+    }
+
+    .product-container {
+        justify-content: space-around;
+        height: 90%;
+    }
+
+}
